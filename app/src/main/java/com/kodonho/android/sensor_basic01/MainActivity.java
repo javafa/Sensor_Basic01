@@ -15,17 +15,13 @@ import android.widget.TextView;
     3. Sensor Listener 작성
     4. Listener 등록 및 Sensor 값 받기
     5. Listener 해제
-
     - 동작속도
     FASTEST, GAME, UI, NORMAL
-
     - 정확도
     HIGH, MEDIUM, LOW
-
  */
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener{
-
     SensorManager manager;
     Sensor acc;
     Sensor light;
@@ -43,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         tvAcc = (TextView) findViewById(R.id.accValue);
         tvLight = (TextView) findViewById(R.id.lightValue);
         tvStep = (TextView) findViewById(R.id.tvStep);
-
         //1
         manager = (SensorManager) getSystemService(SENSOR_SERVICE);
         //2
